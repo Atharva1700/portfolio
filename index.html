@@ -568,17 +568,51 @@
     <div class="timeline">
       <div class="timeline-line"></div>
 
-      <!-- Uber -->
+      <!-- Furtrieve -->
       <div class="timeline-item reveal">
         <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
         <div class="timeline-card">
           <div class="timeline-card-top">
+            <div class="company-logo" style="background:#e9eef1;">
+              <img src="images/furtrieve-logo.png" alt="Furtrieve logo" style="width:100%;height:100%;object-fit:contain;padding:4px;">
+            </div>
+            <div class="timeline-meta">
+              <div class="timeline-company">Furtrieve</div>
+              <div class="timeline-role">AI Software Engineer</div>
+            </div>
+            <span class="timeline-period">Jun 2026 – Present</span>
+          </div>
+          <div class="timeline-location">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Chicago, USA
+          </div>
+          <div class="timeline-points">
+            <div class="timeline-point"><strong>Production MCP server development:</strong>&nbsp; Built and shipped a Model Context Protocol (MCP) server exposing internal healthcare tools to an AI assistant in production, defining tool schemas and authentication scoping so the assistant could safely query clinical data within defined access boundaries.</div>
+            <div class="timeline-point"><strong>Autonomous agent in daily clinical use:</strong>&nbsp; Shipped an autonomous agent that plans and executes a multi-step clinical documentation task, running in production and used by clinical staff daily, with a human-in-the-loop checkpoint for any low-confidence action.</div>
+            <div class="timeline-point"><strong>RAG pipeline with evaluation gates:</strong>&nbsp; Built and shipped a retrieval-augmented generation (RAG) pipeline grounding an AI assistant's responses in clinical documents, running an evaluation suite before each deployment and blocking releases that regressed retrieval precision.</div>
+            <div class="timeline-point"><strong>Multi-model integration with fallback:</strong>&nbsp; Integrated multiple LLM providers (Claude, OpenAI) into a production workflow with automatic fallback when a primary provider's latency exceeded a defined threshold.</div>
+            <div class="timeline-point"><strong>Data validation and quality assessment:</strong>&nbsp; Validated a clinical dataset feeding an AI feature against a manual sample before trusting it, catching a systematic formatting issue that would have silently skewed model output.</div>
+            <div class="timeline-point"><strong>AI governance and privacy by design:</strong>&nbsp; Applied access controls and de-identification checks to a feature handling protected health information, closing a gap where a log statement had been capturing more detail than necessary.</div>
+            <div class="timeline-point"><strong>AI-assisted development with critical review:</strong>&nbsp; Used Claude Code as a default part of the development workflow, manually verifying generated implementations against real requirements and correcting edge cases before merging.</div>
+            <div class="timeline-point"><strong>Requirements translation:</strong>&nbsp; Worked directly with clinical stakeholders to translate ambiguous feature requests into concrete technical specifications with explicit acceptance criteria before implementation began.</div>
+          </div>
+          <div class="timeline-tags">
+            <span class="timeline-tag">MCP</span><span class="timeline-tag">AI Agents</span><span class="timeline-tag">RAG</span><span class="timeline-tag">Claude</span><span class="timeline-tag">OpenAI</span><span class="timeline-tag">LLM Evals</span><span class="timeline-tag">Healthcare AI</span><span class="timeline-tag">Privacy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Uber -->
+      <div class="timeline-item teal reveal reveal-delay-1">
+        <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+        <div class="timeline-card">
+          <div class="timeline-card-top">
             <div class="company-logo" style="background:#fff">
-              <img src="data:image/avif;base64,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" alt="Uber" style="width:100%;height:100%;object-fit:contain;border-radius:50%">
+              <div style="color:#000;font-weight:700;font-size:15px;">UBER</div>
             </div>
             <div class="timeline-meta">
               <div class="timeline-company">Uber</div>
-              <div class="timeline-role">Data Engineer</div>
+              <div class="timeline-role" style="color:var(--teal)">Data Engineer / AI Systems</div>
             </div>
             <span class="timeline-period">Dec 2023 – Dec 2024</span>
           </div>
@@ -587,28 +621,34 @@
             Hyderabad, India
           </div>
           <div class="timeline-points">
-            <div class="timeline-point">Led 4+ end-to-end ETL projects across the full SDLC using PySpark, Hadoop, AWS, Kafka, and Apache Flink.</div>
-            <div class="timeline-point">Cut pipeline execution time from <span style="color:var(--accent);font-weight:600">8 hours → 3 hours</span> on 19M+ daily records ingested from 4 sources into live Power BI dashboards.</div>
-            <div class="timeline-point">Designed data models integrating <span style="color:var(--accent);font-weight:600">50+ tables</span> into nested JSON with 12,000+ entries; ensured GDPR compliance with full audit controls.</div>
-            <div class="timeline-point">Built Python automation framework to concurrently test <span style="color:var(--accent);font-weight:600">500+ jobs</span>; improved sprint efficiency by <span style="color:var(--accent);font-weight:600">30%</span> via JIRA in Agile/Scrum environment.</div>
+            <div class="timeline-point"><strong>Production AI system design at scale:</strong>&nbsp; Designed and deployed production AI systems on a platform processing 19M+ records, achieving 92% task completion accuracy across 15+ real users.</div>
+            <div class="timeline-point"><strong>Multi-agent architecture with tool use:</strong>&nbsp; Built multi-agent systems (LangGraph, LangChain) with function calling, tool use, and multi-step planning, hill-climbing task accuracy from 72% to 91% across 12 iteration cycles.</div>
+            <div class="timeline-point"><strong>RAG and vector database integration:</strong>&nbsp; Built RAG pipelines with vector database retrieval (FAISS), achieving 92% retrieval precision through improved chunking and metadata tagging.</div>
+            <div class="timeline-point"><strong>Model fine-tuning and evaluation:</strong>&nbsp; Fine-tuned large language models using LoRA, achieving 89% accuracy vs. a 71% zero-shot baseline through systematic hyperparameter search, with results and cost reported honestly.</div>
+            <div class="timeline-point"><strong>Data pipeline engineering:</strong>&nbsp; Built high-throughput data pipelines (Kafka, Spark) reducing pipeline execution time from 8 hours to 3 hours (63% reduction) at 99.5% reliability.</div>
+            <div class="timeline-point"><strong>Distributed systems and API development:</strong>&nbsp; Built scalable, fault-tolerant REST APIs and backend services (Go, Python, FastAPI) sustaining 500+ concurrent requests at 99.5% uptime.</div>
+            <div class="timeline-point"><strong>High-performance systems programming:</strong>&nbsp; Optimized performance-critical C++ components, achieving a 12× throughput improvement through cache-locality optimization and targeted rewrites.</div>
+            <div class="timeline-point"><strong>Cloud infrastructure and DevOps:</strong>&nbsp; Deployed and maintained services on AWS using Docker and Kubernetes, cutting average deployment turnaround time 30% through CI/CD automation (GitHub Actions/Jenkins).</div>
+            <div class="timeline-point"><strong>Data quality, governance, and reconciliation:</strong>&nbsp; Established data-quality checks and reconciliation processes, identifying $2.5M in discrepancies through systematic validation before they reached leadership dashboards.</div>
+            <div class="timeline-point"><strong>A/B testing and statistical rigor:</strong>&nbsp; Designed and analyzed A/B tests with proper sample-size calculation and significance testing, applying statistical judgment to distinguish real signal from noise.</div>
+            <div class="timeline-point"><strong>LLM evaluation and reliability engineering:</strong>&nbsp; Built evaluation harnesses tracking accuracy, hallucination rate, and cost across model versions, reducing overall failure rate 38% through targeted failure-mode analysis.</div>
+            <div class="timeline-point"><strong>Cross-functional technical leadership:</strong>&nbsp; Translated ambiguous business and stakeholder requirements into concrete technical specifications, contributing to $1.2M in quarterly business impact through validated, production-grade systems.</div>
           </div>
           <div class="timeline-tags">
-            <span class="timeline-tag">PySpark</span><span class="timeline-tag">Kafka</span><span class="timeline-tag">Apache Flink</span><span class="timeline-tag">AWS</span><span class="timeline-tag">Hadoop</span><span class="timeline-tag">Hive</span><span class="timeline-tag">Power BI</span><span class="timeline-tag">Airflow</span>
+            <span class="timeline-tag">LangGraph</span><span class="timeline-tag">LangChain</span><span class="timeline-tag">RAG</span><span class="timeline-tag">FAISS</span><span class="timeline-tag">LoRA</span><span class="timeline-tag">Kafka</span><span class="timeline-tag">Spark</span><span class="timeline-tag">FastAPI</span><span class="timeline-tag">Go</span><span class="timeline-tag">C++</span><span class="timeline-tag">AWS</span><span class="timeline-tag">Kubernetes</span>
           </div>
         </div>
       </div>
 
       <!-- ECS Technologies -->
-      <div class="timeline-item teal reveal reveal-delay-1">
+      <div class="timeline-item amber reveal reveal-delay-2">
         <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
         <div class="timeline-card">
           <div class="timeline-card-top">
-            <div class="company-logo" style="background:#fff">
-              <img src="data:image/avif;base64,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" alt="ECS Technologies" style="width:100%;height:100%;object-fit:contain;border-radius:50%">
-            </div>
+            <div class="company-logo" style="background:var(--bg-4);color:var(--text-primary);font-weight:700;font-size:16px;">ECS</div>
             <div class="timeline-meta">
               <div class="timeline-company">ECS Technologies</div>
-              <div class="timeline-role" style="color:var(--teal)">Software Engineer</div>
+              <div class="timeline-role" style="color:var(--amber)">Software Engineer</div>
             </div>
             <span class="timeline-period">Feb 2023 – Nov 2023</span>
           </div>
@@ -617,27 +657,30 @@
             Pune, India
           </div>
           <div class="timeline-points">
-            <div class="timeline-point">Designed Tableau dashboards and automated Python + Airflow pipelines, reducing manual reporting by <span style="color:var(--accent);font-weight:600">50%</span>.</div>
-            <div class="timeline-point">Optimized SQL queries on Trino/Presto and PostgreSQL, reducing runtime by <span style="color:var(--accent);font-weight:600">45%</span> while improving data consistency.</div>
-            <div class="timeline-point">Applied ML models to boost predictive accuracy by <span style="color:var(--accent);font-weight:600">35%</span>; built scalable AWS and Azure pipelines enhancing ETL efficiency by <span style="color:var(--accent);font-weight:600">40%</span>.</div>
+            <div class="timeline-point"><strong>ML model development with systematic evaluation:</strong>&nbsp; Fine-tuned transformer and CNN-based models (PyTorch, scikit-learn) with ablation across 8 configurations on 150K+ records, achieving 89% accuracy through evidence-based architecture selection.</div>
+            <div class="timeline-point"><strong>Agentic and RAG system development:</strong>&nbsp; Built agentic workflows and RAG-grounded assistants (LangChain) achieving 89% task and retrieval accuracy, tuned to real usage patterns rather than idealized test sets.</div>
+            <div class="timeline-point"><strong>Full-stack development:</strong>&nbsp; Built full-stack features (React frontend, Python/Java backend) on 150K+ records, delivering 5 production features with zero post-release regressions.</div>
+            <div class="timeline-point"><strong>Data pipeline and quality engineering:</strong>&nbsp; Built ETL pipelines and automated validation checks, achieving 98% data quality coverage and catching broken calculations before they reached stakeholders.</div>
+            <div class="timeline-point"><strong>API and database design:</strong>&nbsp; Designed REST APIs and relational schemas (PostgreSQL) supporting application data needs, applying object-oriented principles to keep systems maintainable as they grew.</div>
+            <div class="timeline-point"><strong>Performance engineering:</strong>&nbsp; Rewrote hot-path Python code as C++ extensions (pybind11) with cache-locality optimization, achieving strong throughput improvements on data-intensive workloads.</div>
+            <div class="timeline-point"><strong>Testing and CI/CD discipline:</strong>&nbsp; Built automated test suites (pytest, 87%+ coverage) integrated into CI pipelines, catching regressions before they reached production.</div>
+            <div class="timeline-point"><strong>Business intelligence and dashboards:</strong>&nbsp; Built dashboards for business stakeholders (Power BI), achieving 80% self-service adoption within 30 days through clear, well-documented visualizations.</div>
           </div>
           <div class="timeline-tags">
-            <span class="timeline-tag">Python</span><span class="timeline-tag">Tableau</span><span class="timeline-tag">Airflow</span><span class="timeline-tag">TensorFlow</span><span class="timeline-tag">PostgreSQL</span><span class="timeline-tag">Trino</span><span class="timeline-tag">AWS</span><span class="timeline-tag">Azure</span>
+            <span class="timeline-tag">PyTorch</span><span class="timeline-tag">scikit-learn</span><span class="timeline-tag">LangChain</span><span class="timeline-tag">RAG</span><span class="timeline-tag">React</span><span class="timeline-tag">Python</span><span class="timeline-tag">Java</span><span class="timeline-tag">PostgreSQL</span><span class="timeline-tag">C++</span><span class="timeline-tag">pytest</span><span class="timeline-tag">Power BI</span>
           </div>
         </div>
       </div>
 
       <!-- Concentrix -->
-      <div class="timeline-item amber reveal reveal-delay-2">
+      <div class="timeline-item reveal reveal-delay-3">
         <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
         <div class="timeline-card">
           <div class="timeline-card-top">
-            <div class="company-logo" style="background:#fff">
-              <img src="data:image/avif;base64,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" alt="Concentrix" style="width:100%;height:100%;object-fit:contain;border-radius:50%">
-            </div>
+            <div class="company-logo" style="background:var(--bg-4);color:var(--text-primary);font-weight:700;font-size:14px;">CNX</div>
             <div class="timeline-meta">
               <div class="timeline-company">Concentrix</div>
-              <div class="timeline-role" style="color:var(--amber)">Technical Engineer</div>
+              <div class="timeline-role">Technical Engineer</div>
             </div>
             <span class="timeline-period">Jun 2022 – Nov 2022</span>
           </div>
@@ -646,15 +689,16 @@
             Pune, India
           </div>
           <div class="timeline-points">
-            <div class="timeline-point">Reduced Dell product escalations by <span style="color:var(--accent);font-weight:600">15%</span> by analyzing large-scale telemetry data with SQL and Python to identify critical failure patterns.</div>
-            <div class="timeline-point">Built real-time Tableau dashboards for product managers, cutting issue detection time by <span style="color:var(--accent);font-weight:600">40%</span>.</div>
-            <div class="timeline-point">Spearheaded a standardized reporting framework used by 5+ engineering teams, reducing weekly data-gathering time by <span style="color:var(--accent);font-weight:600">30%</span>.</div>
+            <div class="timeline-point"><strong>Data-driven troubleshooting:</strong>&nbsp; Applied Python and SQL-based analysis to operational and hardware telemetry data across 50K+ records, identifying top failure patterns and cutting escalations 15% and reporting time 30%.</div>
+            <div class="timeline-point"><strong>Process improvement:</strong>&nbsp; Applied Lean Six Sigma methodology to a recurring support workflow, translating root-cause analysis into a measurable reduction in resolution time.</div>
+            <div class="timeline-point"><strong>Customer-facing technical support:</strong>&nbsp; Diagnosed and resolved recurring hardware and application issues directly with customers, balancing fast resolution with accurate root-cause documentation.</div>
           </div>
           <div class="timeline-tags">
-            <span class="timeline-tag">SQL</span><span class="timeline-tag">Python</span><span class="timeline-tag">Tableau</span><span class="timeline-tag">Data Analysis</span><span class="timeline-tag">KPI Reporting</span>
+            <span class="timeline-tag">Python</span><span class="timeline-tag">SQL</span><span class="timeline-tag">Telemetry</span><span class="timeline-tag">Lean Six Sigma</span><span class="timeline-tag">Root Cause Analysis</span><span class="timeline-tag">Technical Support</span>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>

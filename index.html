@@ -85,7 +85,7 @@
     /* ——— NAV ——— */
     .nav{position:fixed;top:0;left:0;right:0;z-index:900;padding:0 var(--gutter);height:64px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid transparent;transition:background var(--t),border-color var(--t)}
     .nav.scrolled{background:rgba(241,237,228,0.82);border-color:var(--line);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
-    .nav-logo{font-family:var(--serif);font-size:21px;letter-spacing:-0.01em;transition:opacity var(--t)}
+    .nav-logo{font-family:var(--serif);font-size:17px;letter-spacing:0.02em;white-space:nowrap;transition:opacity var(--t)}
     .nav-logo span{color:var(--pine)}
     .nav-logo:hover{opacity:0.72}
     .nav-links{display:flex;align-items:center;gap:2px}
@@ -128,7 +128,7 @@
     /* ——— ABOUT ——— */
     .about-grid{display:grid;grid-template-columns:0.85fr 1.3fr;gap:clamp(36px,6vw,80px);align-items:start}
     .about-photo{width:100%;aspect-ratio:4/5;background:var(--paper-2);border-radius:var(--r-lg);border:1px solid var(--line);overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;box-shadow:var(--sh-1)}
-    .about-photo img{width:100%;height:100%;object-fit:cover}
+    .about-photo img{width:100%;height:100%;object-fit:cover;object-position:center 8%}
     .about-photo .ph{display:flex;flex-direction:column;align-items:center;gap:12px;color:var(--ink-3)}
     .about-photo .ph svg{width:38px;height:38px;opacity:0.5}
     .about-photo .ph span{font-family:var(--mono);font-size:11px;letter-spacing:0.08em}
@@ -339,7 +339,7 @@
 
 <!-- NAV -->
 <nav class="nav" id="mainNav">
-  <a href="#hero" class="nav-logo">AA<span>.</span></a>
+  <a href="#hero" class="nav-logo">ATHARVA ARBOOJ<span>.</span></a>
   <div class="nav-links">
     <a href="#about" class="nav-link">About</a>
     <a href="#skills" class="nav-link">Skills</a>
@@ -367,7 +367,7 @@
   <div class="container hero-content">
     <div class="hero-eyebrow"><span class="dot"></span><span>Open to work · Chicago, IL</span></div>
     <h1 class="t-hero hero-title">Building data<br><em>that scales.</em></h1>
-    <p class="t-lede hero-sub">Data &amp; ML Engineer. I design end-to-end systems — pipelines, warehouses and ML infrastructure — that power decisions at scale. Open to Data Engineering, Analytics Engineering and ML Infrastructure roles.</p>
+    <p class="t-lede hero-sub">Software Engineer who builds across the stack — AI/ML systems, data pipelines, and production backend/full-stack applications. I like taking a problem from ambiguous requirements to a shipped, tested solution. Open to Software, Data, AI/ML, and Systems roles.</p>
     <div class="hero-actions">
       <a href="./projects.html" class="btn btn-primary">View my work
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
@@ -415,8 +415,8 @@
       <div class="reveal rd-2">
         <p class="about-intro">I move data where it needs to go — <em>reliably, at scale, without drama.</em></p>
         <div class="about-body">
-          <p>I'm a Data &amp; ML Engineer with experience at Uber and ECS Technologies, now finishing my Master's in Information Systems at DePaul in Chicago. I build end-to-end data pipelines, cloud infrastructure and real-time streaming systems — and, increasingly, the AI systems that sit on top of them.</p>
-          <p>At Uber I led ETL work processing 19M+ records daily and cut a core pipeline from 8 hours to 3. I care about engineering depth and business impact in equal measure — a faster pipeline and a dashboard that finally tells the truth are both wins.</p>
+          <p>Software Engineer who builds end to end — from data pipelines and ML infrastructure to full-stack applications and agentic AI systems. I care most about the space between "it works in testing" and "it holds up in production," and spend real time there: validating assumptions, handling edge cases, and making sure a system does what it claims under real conditions, not just clean ones.</p>
+          <p>My work spans backend and full-stack development, data engineering, and applied AI/ML — with growing systems-level curiosity beyond the software layer. Open to Software Engineering, Data Engineering, AI/ML, and Applied Engineering roles.</p>
         </div>
         <div class="about-highlights">
           <div class="highlight-card">
